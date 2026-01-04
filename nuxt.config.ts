@@ -1,5 +1,10 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true }
-})
+  runtimeConfig: {
+    public: {
+      apiUrl: "http://localhost:3000",
+      sanityProjectId: "uh17jgul",
+      sanityDataset: "production",
+      sanityApiVersion: "2023-10-01",
+    },
+  },
+});
